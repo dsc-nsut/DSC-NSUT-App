@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "397789430716",
+    "project_id": "dsc-nsut",
+    "storage_bucket": "dsc-nsut.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397789430716:android:8b1981c9729a25144661b9",
+        "android_client_info": {
+          "package_name": "com.dscnsut.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "397789430716-bpurf7rtj8a3iajnlmiiisrqvh1lb2l7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAmNv9cuwWc7UIIF-hEixumoLjx1Q4bII"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "397789430716-bpurf7rtj8a3iajnlmiiisrqvh1lb2l7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
