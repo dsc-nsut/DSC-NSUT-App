@@ -1,19 +1,21 @@
 package com.dscnsut.app.events
 
-import com.google.firebase.Timestamp
 import com.google.firebase.firestore.DocumentId
 import com.google.gson.annotations.Expose
+import java.net.URL
 
 
 data class EventsModel(
     @DocumentId
     val id: String? = null,
     @Expose
-    val Description: String? = null,
+    val description: String? = null,
     @Expose
-    val Speaker: String? = null,
+    val speaker: String? = null,
     @Expose
-    val Topic: String? = null,
+    val topic: String? = null,
     @Expose
-    val Date: Timestamp? = null
+    val date: Long? = null,
+    @Expose
+    val registrationLink: URL? = null
 )
