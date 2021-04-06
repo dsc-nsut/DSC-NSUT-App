@@ -2,8 +2,6 @@ package com.dscnsut.app.events
 
 import com.google.firebase.firestore.DocumentId
 import com.google.gson.annotations.Expose
-import java.net.URL
-
 
 data class EventsModel(
     @DocumentId
@@ -17,5 +15,5 @@ data class EventsModel(
     @Expose
     val date: Long? = null,
     @Expose
-    val registrationLink: URL? = null
+    val registrationLink: String? = null
 )
