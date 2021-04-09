@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_components"
+    app:startDestination="@id/fragment_blog_list">
+
+    <fragment
+        android:id="@+id/fragment_blog_list"
+        android:name="com.dscnsut.app.start_activity"
+        android:label="fragment_start_activity"
+        tools:layout="@layout/fragment_blog_list" >
+        <action
+            android:id="@+id/action_start_activity_to_blog_content"
+            app:destination="@id/fragment_blog_details" />
+        <action
+            android:id="@+id/action_start_activity_to_events"
+            app:destination="@id/fragment_events" />
+        <action
+            android:id="@+id/action_start_activity_to_members"
+            app:destination="@id/fragment_members" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_blog_details"
+        android:name="com.dscnsut.app.blog_content"
+        android:label="fragment_blog_content"
+        tools:layout="@layout/fragment_blog_details" />
+    <fragment
+        android:id="@+id/fragment_events"
+        android:name="com.dscnsut.app.events_fragment"
+        android:label="fragment_events_fragment"
+        tools:layout="@layout/fragment_events" >
+        <action
+            android:id="@+id/action_events_fragment_to_event_detail_fragment"
+            app:destination="@id/fragment_event_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_event_details"
+        android:name="com.dscnsut.app.event_detail_fragment"
+        android:label="fragment_event_detail_fragment"
+        tools:layout="@layout/fragment_event_detail" />
+    <fragment
+        android:id="@+id/fragment_members"
+        android:name="com.dscnsut.app.member_fragment"
+        android:label="fragment_member_fragment"
+        tools:layout="@layout/fragment_members" >
+        <action
+            android:id="@+id/action_members_to_member_details"
+            app:destination="@id/fragment_member_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_member_details"
+        android:name="com.dscnsut.app.member_detail_fragment"
+        android:label="fragment_member_detail_fragment"
+        tools:layout="@layout/fragment_member_detail" />
+</navigation>

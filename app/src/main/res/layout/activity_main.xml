@@ -11,13 +11,20 @@
 
     <!--Navigation Drawer-->
 
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_main"
+        />
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         app:headerLayout="@layout/nav_header"
-        app:menu="@menu/nav_header_menu"
-
+        app:menu="@menu/bottom_navigation_bar"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         />
@@ -39,7 +46,7 @@
             android:id="@+id/bottom_nav"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:menu="@menu/navigation_bar"
+            app:menu="@menu/bottom_navigation_bar"
             android:layout_alignParentBottom="true"
             android:background="?android:attr/windowBackground">
 

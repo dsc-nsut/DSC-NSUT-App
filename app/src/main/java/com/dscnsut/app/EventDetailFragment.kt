@@ -13,10 +13,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [start_activity.newInstance] factory method to
+ * Use the [event_detail_fragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class start_activity : Fragment() {
+class event_detail_fragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -34,7 +34,7 @@ class start_activity : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_start_activity, container, false)
+        return inflater.inflate(R.layout.fragment_event_detail, container, false)
     }
 
     companion object {
@@ -44,12 +44,12 @@ class start_activity : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment start_activity.
+         * @return A new instance of fragment event_detail_fragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            start_activity().apply {
+            event_detail_fragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
