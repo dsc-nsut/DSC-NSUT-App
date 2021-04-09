@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/eventsFragment">
+
+    <fragment
+        android:id="@+id/blogsFragment"
+        android:name="com.dscnsut.app.BlogsFragment"
+        android:label="fragment_blogs"
+        tools:layout="@layout/fragment_blogs" />
+    <fragment
+        android:id="@+id/membersFragment"
+        android:name="com.dscnsut.app.MembersFragment"
+        android:label="fragment_members"
+        tools:layout="@layout/fragment_members" />
+    <fragment
+        android:id="@+id/eventsFragment"
+        android:name="com.dscnsut.app.EventsFragment"
+        android:label="fragment_events"
+        tools:layout="@layout/fragment_events" />
+</navigation>
