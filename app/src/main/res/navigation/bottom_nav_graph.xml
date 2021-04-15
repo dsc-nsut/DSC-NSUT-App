@@ -7,11 +7,11 @@
 
     <fragment
         android:id="@+id/blogsFragment"
-        android:name="com.dscnsut.app.blogs.BlogsFragment"
+        android:name="BlogsFragment"
         android:label="fragment_blogs"
         tools:layout="@layout/fragment_blogs" >
         <action
-            android:id="@+id/action_blogsFragment_to_fragment_blogDetails"
+            android:id="@+id/navigateToBlogDetailsFragment"
             app:destination="@id/fragment_blogDetails"
             app:enterAnim="@anim/slide_in_left"
             app:exitAnim="@anim/slide_out_right"
@@ -30,7 +30,11 @@
         tools:layout="@layout/fragment_events" />
     <fragment
         android:id="@+id/fragment_blogDetails"
-        android:name="com.dscnsut.app.fragment_blogDetails"
+        android:name="com.dscnsut.app.blogs.fragment_blogDetails"
         android:label="fragment_blog_details"
-        tools:layout="@layout/fragment_blog_details" />
+        tools:layout="@layout/fragment_blog_details" >
+        <argument
+            android:name="blog"
+            app:argType="com.dscnsut.app.blogs.BlogsModel" />
+    </fragment>
 </navigation>
