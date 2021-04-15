@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="blogs.fragment_blogDetails">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+    <TextView
+        android:id="@+id/BlogHeader"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text = "@string/blog_header"
+        android:textColor="#363A43"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text = "@string/by"
+        android:textColor="#7A8089"
+        android:textSize="15sp"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:id="@+id/BlogCreator"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text = "@string/blog_creator"
+        android:textColor="#080808"
+        android:textSize="20sp"
+        android:layout_marginTop="2dp"/>
+    <TextView
+        android:id="@+id/BlogDate"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:text = "@string/blog_date"
+    android:textColor="#7A8089"
+    android:textSize="15sp"
+    android:layout_marginTop="2dp"/>
+        <TextView
+            android:id="@+id/BlogBody"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text = "@string/lipsum"
+            android:textColor="#7A8089"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            />
+    </LinearLayout>
+
+</FrameLayout>
