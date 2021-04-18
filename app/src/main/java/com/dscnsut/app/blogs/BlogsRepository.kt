@@ -7,7 +7,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 class BlogsRepository {
     val blogsRef = FirebaseFirestore.getInstance().collection("blogs")
 
-    fun getBlogs(blogs: MutableLiveData<List<BlogsModel>>) {
+    fun getBlogs(blogs: MutableLiveData<MutableList<BlogsModel>>) {
         blogsRef.get()
             .addOnSuccessListener {
                 blogs.value = it.toObjects(BlogsModel::class.java)
