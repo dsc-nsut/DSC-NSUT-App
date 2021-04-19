@@ -37,13 +37,6 @@ class BListAdapter(private val listener : OnItemClickListener): RecyclerView.Ada
             listener.onItemClick(ci)
         }
 
-        fun onClick(v: View?) {
-            if (position != RecyclerView.NO_POSITION) {
-                listener.onItemClick(mutableBlogList[position])
-            }
-
-        }
-
     }
 
     override fun getItemCount(): Int {
