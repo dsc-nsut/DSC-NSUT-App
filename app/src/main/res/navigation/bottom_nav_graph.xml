@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/blogsFragment"
-        android:name="BlogsFragment"
+        android:name="com.dscnsut.app.blogs.BlogsFragment"
         android:label="fragment_blogs"
         tools:layout="@layout/fragment_blogs" >
         <action
@@ -17,6 +17,9 @@
             app:exitAnim="@anim/slide_out_right"
             app:popEnterAnim="@anim/slide_in_right"
             app:popExitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_blogsFragment_to_fragment_blogDetails"
+            app:destination="@id/fragment_blogDetails" />
     </fragment>
     <fragment
         android:id="@+id/membersFragment"
