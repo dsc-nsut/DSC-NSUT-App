@@ -25,7 +25,11 @@
         android:id="@+id/membersFragment"
         android:name="com.dscnsut.app.members.MembersFragment"
         android:label="fragment_members"
-        tools:layout="@layout/fragment_members" />
+        tools:layout="@layout/fragment_members" >
+        <action
+            android:id="@+id/action_membersFragment_to_memberDetailsFragment"
+            app:destination="@id/memberDetailsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/eventsFragment"
         android:name="com.dscnsut.app.events.EventsFragment"
@@ -39,5 +43,14 @@
         <argument
             android:name="blog"
             app:argType="com.dscnsut.app.blogs.BlogsModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/memberDetailsFragment"
+        android:name="com.dscnsut.app.members.MemberDetailsFragment"
+        android:label="fragment_member_details"
+        tools:layout="@layout/fragment_member_details" >
+        <argument
+            android:name="member"
+            app:argType="com.dscnsut.app.members.MembersModel" />
     </fragment>
 </navigation>

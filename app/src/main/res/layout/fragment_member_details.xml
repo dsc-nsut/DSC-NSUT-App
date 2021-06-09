@@ -3,16 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id = "@+id/mfrag"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".members.MembersFragment">
+    tools:context=".members.MemberDetailsFragment">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="vertical"
-        android:padding="6dp"
-        app:layoutManager="LinearLayoutManager" />
+        android:text="@string/hello_blank_fragment" />
 
 </FrameLayout>
