@@ -33,7 +33,7 @@
         tools:layout="@layout/fragment_events" />
     <fragment
         android:id="@+id/fragment_blogDetails"
-        android:name="com.dscnsut.app.blogs.fragment_blogDetails"
+        android:name="com.dscnsut.app.blogs.BlogDetailsFragment"
         android:label="fragment_blog_details"
         tools:layout="@layout/fragment_blog_details" >
         <argument

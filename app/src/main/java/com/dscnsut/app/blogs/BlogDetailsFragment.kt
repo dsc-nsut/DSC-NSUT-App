@@ -11,9 +11,9 @@ import android.widget.Toast
 import androidx.navigation.fragment.navArgs
 import com.dscnsut.app.R
 
-class fragment_blogDetails : Fragment() {
+class BlogDetailsFragment : Fragment() {
 
-    val safeArgs : fragment_blogDetailsArgs by navArgs()
+    val safeArgs : BlogDetailsFragmentArgs by navArgs()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
