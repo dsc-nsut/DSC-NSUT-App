@@ -3,16 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/bfrag"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="BlogsFragment">
+    tools:context=".blogs.BlogsFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
         android:scrollbars="vertical"
-        app:layoutManager="LinearLayoutManager" />
-
-
+        tools:listitem="@layout/bloglist_layout" />
 
 </FrameLayout>

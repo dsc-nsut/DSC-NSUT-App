@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:id="@+id/cardView" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="4dp"
+        android:id="@+id/rlay"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_v_blist"
+            android:layout_width="60dp"
+            android:padding="12dp"
+            android:layout_height="60dp"
+            android:src="@drawable/blogs"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="26sp"
+            android:text="Heading"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/image_v_blist"
+            android:id="@+id/tv_blist"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="date"
+            android:layout_toEndOf="@id/image_v_blist"
+            android:layout_below="@id/tv_blist"
+            android:textSize="18sp"
+            android:padding="4dp"
+            android:id="@+id/tv_date"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/brief"
+            android:textSize="14sp"
+            android:layout_toEndOf="@id/image_v_blist"
+            android:layout_below="@id/tv_date"
+            android:padding="4dp"
+            android:text="blah blah blah..."/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
