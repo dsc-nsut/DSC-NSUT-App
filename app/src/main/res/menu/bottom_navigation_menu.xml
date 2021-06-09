@@ -9,6 +9,4 @@
     <item android:id="@+id/membersFragment"
         android:title="Members"
         android:icon="@drawable/members"/>
-
-
 </menu>
