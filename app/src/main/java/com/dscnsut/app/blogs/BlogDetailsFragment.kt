@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.navigation.fragment.navArgs
 import com.dscnsut.app.R
+
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
@@ -29,7 +30,6 @@ class fragment_blogDetails : Fragment() {
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
-
         }
     }
 
