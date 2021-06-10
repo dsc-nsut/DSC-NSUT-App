@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.navigation.fragment.navArgs
@@ -33,16 +34,32 @@ class MemberDetailsFragment : Fragment() {
 
         //load profile photo
 
-        val profilephoto = view.findViewById<ImageView>(R.id.MemberProfilePic)
-        val MemberPicurl = member.picName
+        val profilePhoto = view.findViewById<ImageView>(R.id.MemberProfilePic)
+        val memberPicUrl = member.picName
 
-        Glide.with(this).load(MemberPicurl).placeholder(R.drawable.ic_launcher_foreground).error(R.drawable.ic_launcher_foreground).into(profilephoto)
+        Glide.with(this).load(memberPicUrl).placeholder(R.drawable.ic_launcher_foreground).error(R.drawable.ic_launcher_foreground).into(profilePhoto)
 
         //Buttons
-        val githubButton = view.findViewById<Button>(R.id.githubButton)
-        val linkedinButton = view.findViewById<Button>(R.id.linkedinButton)
-        val instaButton = view.findViewById<Button>(R.id.instaButton)
-        val twitterButton = view.findViewById<Button>(R.id.twitterButton)
+        val githubButton = view.findViewById<ImageButton>(R.id.githubButton)
+        val linkedinButton = view.findViewById<ImageButton>(R.id.linkedinButton)
+        val instaButton = view.findViewById<ImageButton>(R.id.instaButton)
+        val twitterButton = view.findViewById<ImageButton>(R.id.twitterButton)
+
+        //making certain social media buttons visible
+
+        if (member.github != null){
+            githubButton.visibility = View.VISIBLE
+        }
+        if (member.linkedin != null){
+            linkedinButton.visibility = View.VISIBLE
+        }
+        if (member.instagram != null){
+            instaButton.visibility = View.VISIBLE
+        }
+        if (member.twitter != null){
+            twitterButton.visibility = View.VISIBLE
+        }
+
 
         //listeners on social media buttons
 

@@ -72,10 +72,12 @@
                 android:background="@drawable/btnbackgrnd"
                 android:layout_margin="15dp"
                 android:layout_height="60dp"
+                android:visibility="gone"
                 android:id="@+id/githubButton"
                 android:contentDescription="hmm" />
             <ImageButton
                 android:layout_width="60dp"
+                android:visibility="gone"
                 android:background="@drawable/btnbackgrnd"
                 android:src="@drawable/linkedincircle"
                 android:scaleType="centerCrop"
@@ -89,6 +91,7 @@
                 android:src="@drawable/instalogo"
                 android:scaleType="centerCrop"
                 android:id="@+id/instaButton"
+                android:visibility="gone"
                 android:layout_height="60dp"/>
             <ImageButton
                 android:layout_width="60dp"
@@ -97,6 +100,7 @@
                 android:src="@drawable/teitterlogo"
                 android:scaleType="centerCrop"
                 android:id="@+id/twitterButton"
+                android:visibility="gone"
                 android:layout_height="60dp"/>
 
         </LinearLayout>
