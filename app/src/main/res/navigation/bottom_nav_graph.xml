@@ -30,7 +30,11 @@
         android:id="@+id/eventsFragment"
         android:name="com.dscnsut.app.events.EventsFragment"
         android:label="fragment_events"
-        tools:layout="@layout/fragment_events" />
+        tools:layout="@layout/fragment_events" >
+        <action
+            android:id="@+id/action_eventsFragment_to_eventDetailsFragment"
+            app:destination="@id/eventDetailsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/fragment_blogDetails"
         android:name="com.dscnsut.app.blogs.BlogDetailsFragment"
@@ -39,5 +43,13 @@
         <argument
             android:name="blog"
             app:argType="com.dscnsut.app.blogs.BlogsModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventDetailsFragment"
+        android:name="com.dscnsut.app.events.EventDetailsFragment"
+        android:label="EventDetailsFragment" >
+        <argument
+            android:name="event"
+            app:argType="com.dscnsut.app.events.EventsModel" />
     </fragment>
 </navigation>
